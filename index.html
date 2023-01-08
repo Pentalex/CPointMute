@@ -111,7 +111,7 @@
             const rewardname = document.getElementById("rewardname").value;
             const sourcename = document.getElementById("sourcename").value;
             const time = document.getElementById("time").value;
-            var url = new URL(window.location.protocol + window.location.host + 'ChannelPointMute/app.html');
+            var url = new URL(window.location.protocol + window.location.host + '/ChannelPointMute/app.html');
             url.searchParams.append('token', token);
             url.searchParams.append('obspw', obspw);
             url.searchParams.append('rewardname', rewardname);
@@ -119,6 +119,7 @@
             url.searchParams.append('time', time);
 
             document.getElementById("generated").value = url;
+
             document.getElementById("generatedBox").style.visibility = "visible";
 
             console.log(url);
